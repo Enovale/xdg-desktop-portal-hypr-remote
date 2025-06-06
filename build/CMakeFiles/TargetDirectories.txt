@@ -1,0 +1,9 @@
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/hyprland-remote-desktop.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/generate_protocols.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/test-virtual-input.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/edit_cache.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/rebuild_cache.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/list_install_components.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/install.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/install/local.dir
+/home/dom/hyprland-remote-desktop/build/CMakeFiles/install/strip.dir
