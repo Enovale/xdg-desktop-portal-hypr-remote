@@ -1,0 +1,207 @@
+# Build directories
+build/
+Build/
+BUILD/
+debug/
+Debug/
+release/
+Release/
+out/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Generated files
+*.cmake
+!CMakeLists.txt
+
+# C++ build artifacts
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Object files
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+xdg-desktop-portal-hypr-remote
+test-virtual-input
+
+# Core dumps
+core.*
+
+# Generated protocol files (if any)
+generated/
+*-protocol.c
+*-protocol.h
+*-client-protocol.h
+*-server-protocol.h
+
+# D-Bus service files (generated)
+*.service
+!*.service.in
+
+# IDE and editor files
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# CLion
+cmake-build-*/
+
+# Qt Creator
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Code::Blocks
+*.layout
+*.depend
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS specific files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Package management
+conan.lock
+vcpkg_installed/
+
+# Nix
+result
+result-*
+
+# Test artifacts
+test_results/
+*.test
+test_*.log
+
+# Documentation build
+docs/build/
+docs/_build/
+
+# Coverage reports
+*.gcov
+*.gcda
+*.gcno
+coverage/
+coverage.info
+
+# Address sanitizer
+*.asan
+
+# Memory check reports
+*.memcheck
+valgrind-*.log
+
+# Profiling
+*.prof
+gmon.out
+
+# Tags
+tags
+TAGS
+.tags
+.TAGS
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Cache directories
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Wayland specific
+wayland-scanner
+*.xml.h
+*.xml.c 

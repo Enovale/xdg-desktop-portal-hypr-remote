@@ -1,1 +1,0 @@
-/run/current-system/sw/bin/g++ -g -Wl,--dependency-file=CMakeFiles/test-virtual-input.dir/link.d "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o" -o test-virtual-input  libwayland_protocols.a -lwayland-client

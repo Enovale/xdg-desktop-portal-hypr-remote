@@ -1,6 +1,0 @@
-# Hashes of file build rules.
-6df27c11a4c0bf1a51a8222ab798aa8b CMakeFiles/generate_protocols
-757f8f4a59d66903964f7205f4e97c27 generated/virtual-keyboard-unstable-v1-client-protocol.h
-d6198c96945ac9377e94f9e2770e2282 generated/virtual-keyboard-unstable-v1-protocol.c
-4e0cc3b19c1de541394098d9397ff1d4 generated/wlr-virtual-pointer-unstable-v1-client-protocol.h
-e0cc84d2ca6dafa2dadf5ddb42052d96 generated/wlr-virtual-pointer-unstable-v1-protocol.c

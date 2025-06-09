@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.impl.portal.desktop.hypr-remote
-Exec=/var/empty/local/libexec/xdg-desktop-portal-hypr-remote
-SystemdService=xdg-desktop-portal-hypr-remote.service
