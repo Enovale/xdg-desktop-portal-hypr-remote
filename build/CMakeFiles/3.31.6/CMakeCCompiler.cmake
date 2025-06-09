@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/run/current-system/sw/bin/cc")
+set(CMAKE_C_COMPILER "/run/current-system/sw/bin/gcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "14.2.1")
@@ -23,9 +23,9 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 set(CMAKE_AR "/run/current-system/sw/bin/ar")
-set(CMAKE_C_COMPILER_AR "CMAKE_C_COMPILER_AR-NOTFOUND")
+set(CMAKE_C_COMPILER_AR "/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/bin/gcc-ar")
 set(CMAKE_RANLIB "/run/current-system/sw/bin/ranlib")
-set(CMAKE_C_COMPILER_RANLIB "CMAKE_C_COMPILER_RANLIB-NOTFOUND")
+set(CMAKE_C_COMPILER_RANLIB "/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/bin/gcc-ranlib")
 set(CMAKE_LINKER "/run/current-system/sw/bin/ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
@@ -75,7 +75,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed;/nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include;/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/nix/store/93q4s105xxhzxf67r1wdd9vwwfi16rbb-libffi-3.4.8-dev/include;/nix/store/2vixc3z7hl2c1liq1624lrkw2lkc3hgm-systemd-257.5-dev/include;/nix/store/17mijr1mvgcz2mh22rs7h8qmipwf3m7w-wayland-1.23.1-dev/include;/nix/store/x2axjgadd07gidd3f9paplyp2rapmq4m-wayland-protocols-1.44/include;/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include;/nix/store/p2329axpy8rf5m3hn2bndjciyq9b73bx-sdbus-cpp-1.5.0/include;/nix/store/j87n5xqfj6c03633g7l95lfjq5ynml13-gdb-16.2/include;/nix/store/245c5yscaxyxi49fz9ys1i1apy5s2igz-valgrind-3.24.0-dev/include;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed;/nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include;/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib;/usr/lib32;/nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1.20250322;/nix/store/7c0v0kbrrdc2cqgisi78jdqxn73n3401-gcc-14.2.1.20250322-lib/lib;/nix/store/hhfm5fkvb1alg1np5a69m2qlcjqhr062-binutils-wrapper-2.44/bin;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib;/usr/lib32;/nix/store/90c412b9wqhfny300rg5s2gpsbrqb31q-libffi-3.4.8/lib;/nix/store/if9z6wmzmb07j63c02mvfkhn1mw1w5p4-systemd-257.5/lib;/nix/store/mxyi7nahmxs41d2xnyfx9kvanqh3p706-wayland-1.23.1/lib;/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/lib;/nix/store/p2329axpy8rf5m3hn2bndjciyq9b73bx-sdbus-cpp-1.5.0/lib;/nix/store/j87n5xqfj6c03633g7l95lfjq5ynml13-gdb-16.2/lib;/nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1.20250322;/nix/store/7c0v0kbrrdc2cqgisi78jdqxn73n3401-gcc-14.2.1.20250322-lib/lib;/nix/store/hhfm5fkvb1alg1np5a69m2qlcjqhr062-binutils-wrapper-2.44/bin;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1;/nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

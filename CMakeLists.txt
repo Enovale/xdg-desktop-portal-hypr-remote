@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(hyprland-remote-desktop)
+project(xdg-desktop-portal-hypr-remote LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -11,10 +11,13 @@ if(DEVELOPMENT_MODE)
     message(STATUS "Building in DEVELOPMENT mode - will use .dev service name")
 endif()
 
+
+
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(WAYLAND_CLIENT REQUIRED wayland-client)
 pkg_check_modules(WAYLAND_PROTOCOLS REQUIRED wayland-protocols)
 pkg_check_modules(LIBEI REQUIRED libei-1.0)
+pkg_check_modules(LIBEIS REQUIRED libeis-1.0)
 pkg_check_modules(SDBUSCPP REQUIRED sdbus-c++)
 
 # Find wayland-scanner
@@ -52,6 +55,7 @@ set(VIRTUAL_POINTER_XML "${PROTOCOL_DIR}/wlr-virtual-pointer-unstable-v1.xml")
 set(VIRTUAL_POINTER_HEADER "${GENERATED_DIR}/wlr-virtual-pointer-unstable-v1-client-protocol.h")
 set(VIRTUAL_POINTER_SOURCE "${GENERATED_DIR}/wlr-virtual-pointer-unstable-v1-protocol.c")
 
+
 add_custom_command(
     OUTPUT ${VIRTUAL_POINTER_HEADER}
     COMMAND ${WAYLAND_SCANNER} client-header ${VIRTUAL_POINTER_XML} ${VIRTUAL_POINTER_HEADER}
@@ -66,28 +70,8 @@ add_custom_command(
     COMMENT "Generating virtual pointer source"
 )
 
-include_directories(
-    ${WAYLAND_CLIENT_INCLUDE_DIRS}
-    ${WAYLAND_PROTOCOLS_INCLUDE_DIRS}
-    ${LIBEI_INCLUDE_DIRS}
-    ${SDBUSCPP_INCLUDE_DIRS}
-    ${GENERATED_DIR}
-)
-
-link_directories(
-    ${WAYLAND_CLIENT_LIBRARY_DIRS}
-    ${WAYLAND_PROTOCOLS_LIBRARY_DIRS}
-    ${LIBEI_LIBRARY_DIRS}
-    ${SDBUSCPP_LIBRARY_DIRS}
-)
-
-# Main executable
-add_executable(hyprland-remote-desktop
-    src/main.cpp
-    src/portal.cpp
-    src/libei_handler.cpp
-    src/wayland_virtual_keyboard.cpp
-    src/wayland_virtual_pointer.cpp
+# Create a library for protocol sources with C linkage
+add_library(wayland_protocols STATIC
     ${VIRTUAL_KEYBOARD_SOURCE}
     ${VIRTUAL_POINTER_SOURCE}
 )
@@ -99,12 +83,59 @@ add_custom_target(generate_protocols DEPENDS
     ${VIRTUAL_POINTER_HEADER}
     ${VIRTUAL_POINTER_SOURCE}
 )
-add_dependencies(hyprland-remote-desktop generate_protocols)
+add_dependencies(wayland_protocols generate_protocols)
 
-target_link_libraries(hyprland-remote-desktop
+# Set language to C for this library
+set_target_properties(wayland_protocols PROPERTIES
+    LINKER_LANGUAGE C
+    C_STANDARD 99
+    POSITION_INDEPENDENT_CODE ON
+)
+
+target_include_directories(wayland_protocols PUBLIC
+    ${GENERATED_DIR}
+    ${WAYLAND_CLIENT_INCLUDE_DIRS}
+)
+
+target_link_libraries(wayland_protocols
+    ${WAYLAND_CLIENT_LIBRARIES}
+)
+
+include_directories(
+    ${WAYLAND_CLIENT_INCLUDE_DIRS}
+    ${WAYLAND_PROTOCOLS_INCLUDE_DIRS}
+    ${LIBEI_INCLUDE_DIRS}
+    ${LIBEIS_INCLUDE_DIRS}
+    ${SDBUSCPP_INCLUDE_DIRS}
+    ${GENERATED_DIR}
+)
+
+link_directories(
+    ${WAYLAND_CLIENT_LIBRARY_DIRS}
+    ${WAYLAND_PROTOCOLS_LIBRARY_DIRS}
+    ${LIBEI_LIBRARY_DIRS}
+    ${LIBEIS_LIBRARY_DIRS}
+    ${SDBUSCPP_LIBRARY_DIRS}
+)
+
+# Main executable
+add_executable(xdg-desktop-portal-hypr-remote
+    src/main.cpp
+    src/portal.cpp
+    src/libei_handler.cpp
+    src/wayland_virtual_keyboard.cpp
+    src/wayland_virtual_pointer.cpp
+)
+
+# Ensure protocol headers are generated before compilation
+add_dependencies(xdg-desktop-portal-hypr-remote generate_protocols)
+
+target_link_libraries(xdg-desktop-portal-hypr-remote
+    wayland_protocols
     ${WAYLAND_CLIENT_LIBRARIES}
     ${WAYLAND_PROTOCOLS_LIBRARIES}
     ${LIBEI_LIBRARIES}
+    ${LIBEIS_LIBRARIES}
     ${SDBUSCPP_LIBRARIES}
 )
 
@@ -112,37 +143,50 @@ target_link_libraries(hyprland-remote-desktop
 include(GNUInstallDirs)
 
 # Install the executable
-install(TARGETS hyprland-remote-desktop
+install(TARGETS xdg-desktop-portal-hypr-remote
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 # Install portal configuration
-install(FILES data/hyprland-remote-desktop.portal
-    DESTINATION ${CMAKE_INSTALL_DATADIR}/xdg-desktop-portal/portals
+install(FILES data/hypr-remote.portal
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/xdg-desktop-portal/portals"
 )
-
 # Install D-Bus service file (with proper path substitution)
-configure_file(data/org.freedesktop.impl.portal.desktop.hyprland.service.in 
-               ${CMAKE_CURRENT_BINARY_DIR}/org.freedesktop.impl.portal.desktop.hyprland.service
-               @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.freedesktop.impl.portal.desktop.hyprland.service
-    DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services
-)
+#configure_file(data/org.freedesktop.impl.portal.desktop.hypr-remote.service.in 
+#               ${CMAKE_CURRENT_BINARY_DIR}/org.freedesktop.impl.portal.desktop.hypr-remote.service
+#               @ONLY)
+#install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.freedesktop.impl.portal.desktop.hypr-remote.service
+#    DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services
+#)
+set(SYSTEMD_SERVICES
+    ON
+    CACHE BOOL "Install systemd service file")
+include(GNUInstallDirs)
+set(LIBEXECDIR ${CMAKE_INSTALL_FULL_LIBEXECDIR})
+configure_file(org.freedesktop.impl.portal.desktop.hypr-remote.service.in
+               org.freedesktop.impl.portal.desktop.hypr-remote.service @ONLY)
+if(SYSTEMD_SERVICES)
+  configure_file(contrib/systemd/xdg-desktop-portal-hypr-remote.service.in
+                 contrib/systemd/xdg-desktop-portal-hypr-remote.service @ONLY)
+endif()
 
 # Test executable for virtual input
 add_executable(test-virtual-input
     test_virtual_input.cpp
     src/wayland_virtual_keyboard.cpp
     src/wayland_virtual_pointer.cpp
-    ${VIRTUAL_KEYBOARD_SOURCE}
-    ${VIRTUAL_POINTER_SOURCE}
 )
 
+# Ensure protocol headers are generated before compilation
+add_dependencies(test-virtual-input generate_protocols)
+
 target_link_libraries(test-virtual-input
+    wayland_protocols
     ${WAYLAND_CLIENT_LIBRARIES}
 )
 
 target_include_directories(test-virtual-input PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}
     ${WAYLAND_CLIENT_INCLUDE_DIRS}
+    ${GENERATED_DIR}
 ) 

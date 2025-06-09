@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/gcc -DDEVELOPMENT_MODE -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -g -std=gnu99 -fPIC -o CMakeFiles/wayland_protocols.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o -c /home/dom/xdg-desktop-portal-hypr-remote/build/generated/virtual-keyboard-unstable-v1-protocol.c",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/build/generated/virtual-keyboard-unstable-v1-protocol.c",
+  "output": "CMakeFiles/wayland_protocols.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/gcc -DDEVELOPMENT_MODE -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -g -std=gnu99 -fPIC -o CMakeFiles/wayland_protocols.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o -c /home/dom/xdg-desktop-portal-hypr-remote/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c",
+  "output": "CMakeFiles/wayland_protocols.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -g -std=gnu++20 -o CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/main.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/main.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/main.cpp",
+  "output": "CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -g -std=gnu++20 -o CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/portal.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/portal.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/portal.cpp",
+  "output": "CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/portal.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -g -std=gnu++20 -o CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/libei_handler.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/libei_handler.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/libei_handler.cpp",
+  "output": "CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/libei_handler.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -g -std=gnu++20 -o CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_keyboard.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp",
+  "output": "CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_keyboard.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -g -std=gnu++20 -o CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_pointer.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp",
+  "output": "CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_pointer.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -I/home/dom/xdg-desktop-portal-hypr-remote/build -g -std=gnu++20 -o CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp",
+  "output": "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -I/home/dom/xdg-desktop-portal-hypr-remote/build -g -std=gnu++20 -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp",
+  "output": "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o"
+},
+{
+  "directory": "/home/dom/xdg-desktop-portal-hypr-remote/build",
+  "command": "/run/current-system/sw/bin/g++ -DDEVELOPMENT_MODE -I/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/include/libei-1.0 -I/home/dom/xdg-desktop-portal-hypr-remote/build/generated -I/home/dom/xdg-desktop-portal-hypr-remote/build -g -std=gnu++20 -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp",
+  "file": "/home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp",
+  "output": "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o"
+}
+]

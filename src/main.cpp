@@ -51,6 +51,13 @@ int main(int argc, char* argv[]) {
     }
     std::cout << "✓ LibEI handler initialized" << std::endl;
     
+    // Start LibEI handler in background thread
+    std::thread libei_thread([&libeiHandler]() {
+        libeiHandler.run();
+    });
+    
+    std::cout << "✓ LibEI handler started and ready for connections" << std::endl;
+    
     // Initialize portal
     if (!portal.init(&libeiHandler)) {
         std::cerr << "Failed to initialize D-Bus portal" << std::endl;
@@ -62,7 +69,7 @@ int main(int argc, char* argv[]) {
     std::cout << "✓ D-Bus portal initialized" << std::endl;
     
     std::cout << "\n🚀 Hyprland Remote Desktop Portal is ready!" << std::endl;
-    std::cout << "Portal available at: org.freedesktop.impl.portal.desktop.hypr-remote-desktop" << std::endl;
+    std::cout << "Portal available at: org.freedesktop.impl.portal.desktop.hypr-remote" << std::endl;
     std::cout << "Press Ctrl+C to stop." << std::endl;
     
     // Start portal in separate thread
@@ -84,6 +91,9 @@ int main(int argc, char* argv[]) {
     }
     
     libeiHandler.stop();
+    if (libei_thread.joinable()) {
+        libei_thread.join();
+    }
     
     // Cleanup in reverse order
     portal.cleanup();

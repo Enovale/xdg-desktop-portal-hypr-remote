@@ -8,11 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-protocol.c" "CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o" "gcc" "CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o.d"
-  "/home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c" "CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o" "gcc" "CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o.d"
-  "/home/dom/hyprland-remote-desktop/src/wayland_virtual_keyboard.cpp" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o" "gcc" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o.d"
-  "/home/dom/hyprland-remote-desktop/src/wayland_virtual_pointer.cpp" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o" "gcc" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o.d"
-  "/home/dom/hyprland-remote-desktop/test_virtual_input.cpp" "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o" "gcc" "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o.d"
+  "/home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o" "gcc" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o.d"
+  "/home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o" "gcc" "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o.d"
+  "/home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp" "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o" "gcc" "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o.d"
   "" "test-virtual-input" "gcc" "CMakeFiles/test-virtual-input.dir/link.d"
   )
 

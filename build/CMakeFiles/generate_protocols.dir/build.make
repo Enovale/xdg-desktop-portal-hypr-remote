@@ -53,10 +53,10 @@ RM = /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dom/hyprland-remote-desktop
+CMAKE_SOURCE_DIR = /home/dom/xdg-desktop-portal-hypr-remote
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dom/hyprland-remote-desktop/build
+CMAKE_BINARY_DIR = /home/dom/xdg-desktop-portal-hypr-remote/build
 
 # Utility rule file for generate_protocols.
 
@@ -71,21 +71,21 @@ CMakeFiles/generate_protocols: generated/virtual-keyboard-unstable-v1-protocol.c
 CMakeFiles/generate_protocols: generated/wlr-virtual-pointer-unstable-v1-client-protocol.h
 CMakeFiles/generate_protocols: generated/wlr-virtual-pointer-unstable-v1-protocol.c
 
-generated/virtual-keyboard-unstable-v1-client-protocol.h: /home/dom/hyprland-remote-desktop/protocols/virtual-keyboard-unstable-v1.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating virtual keyboard client header"
-	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner client-header /home/dom/hyprland-remote-desktop/protocols/virtual-keyboard-unstable-v1.xml /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-client-protocol.h
+generated/virtual-keyboard-unstable-v1-client-protocol.h: /home/dom/xdg-desktop-portal-hypr-remote/protocols/virtual-keyboard-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating virtual keyboard client header"
+	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner client-header /home/dom/xdg-desktop-portal-hypr-remote/protocols/virtual-keyboard-unstable-v1.xml /home/dom/xdg-desktop-portal-hypr-remote/build/generated/virtual-keyboard-unstable-v1-client-protocol.h
 
-generated/virtual-keyboard-unstable-v1-protocol.c: /home/dom/hyprland-remote-desktop/protocols/virtual-keyboard-unstable-v1.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating virtual keyboard source"
-	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner private-code /home/dom/hyprland-remote-desktop/protocols/virtual-keyboard-unstable-v1.xml /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-protocol.c
+generated/virtual-keyboard-unstable-v1-protocol.c: /home/dom/xdg-desktop-portal-hypr-remote/protocols/virtual-keyboard-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating virtual keyboard source"
+	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner private-code /home/dom/xdg-desktop-portal-hypr-remote/protocols/virtual-keyboard-unstable-v1.xml /home/dom/xdg-desktop-portal-hypr-remote/build/generated/virtual-keyboard-unstable-v1-protocol.c
 
-generated/wlr-virtual-pointer-unstable-v1-client-protocol.h: /home/dom/hyprland-remote-desktop/protocols/wlr-virtual-pointer-unstable-v1.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating virtual pointer client header"
-	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner client-header /home/dom/hyprland-remote-desktop/protocols/wlr-virtual-pointer-unstable-v1.xml /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-client-protocol.h
+generated/wlr-virtual-pointer-unstable-v1-client-protocol.h: /home/dom/xdg-desktop-portal-hypr-remote/protocols/wlr-virtual-pointer-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating virtual pointer client header"
+	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner client-header /home/dom/xdg-desktop-portal-hypr-remote/protocols/wlr-virtual-pointer-unstable-v1.xml /home/dom/xdg-desktop-portal-hypr-remote/build/generated/wlr-virtual-pointer-unstable-v1-client-protocol.h
 
-generated/wlr-virtual-pointer-unstable-v1-protocol.c: /home/dom/hyprland-remote-desktop/protocols/wlr-virtual-pointer-unstable-v1.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating virtual pointer source"
-	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner private-code /home/dom/hyprland-remote-desktop/protocols/wlr-virtual-pointer-unstable-v1.xml /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c
+generated/wlr-virtual-pointer-unstable-v1-protocol.c: /home/dom/xdg-desktop-portal-hypr-remote/protocols/wlr-virtual-pointer-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating virtual pointer source"
+	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner private-code /home/dom/xdg-desktop-portal-hypr-remote/protocols/wlr-virtual-pointer-unstable-v1.xml /home/dom/xdg-desktop-portal-hypr-remote/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c
 
 CMakeFiles/generate_protocols.dir/codegen:
 .PHONY : CMakeFiles/generate_protocols.dir/codegen
@@ -107,6 +107,6 @@ CMakeFiles/generate_protocols.dir/clean:
 .PHONY : CMakeFiles/generate_protocols.dir/clean
 
 CMakeFiles/generate_protocols.dir/depend:
-	cd /home/dom/hyprland-remote-desktop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dom/hyprland-remote-desktop /home/dom/hyprland-remote-desktop /home/dom/hyprland-remote-desktop/build /home/dom/hyprland-remote-desktop/build /home/dom/hyprland-remote-desktop/build/CMakeFiles/generate_protocols.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/dom/xdg-desktop-portal-hypr-remote/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dom/xdg-desktop-portal-hypr-remote /home/dom/xdg-desktop-portal-hypr-remote /home/dom/xdg-desktop-portal-hypr-remote/build /home/dom/xdg-desktop-portal-hypr-remote/build /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles/generate_protocols.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/generate_protocols.dir/depend
 

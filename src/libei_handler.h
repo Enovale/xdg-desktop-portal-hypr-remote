@@ -16,6 +16,7 @@ public:
     void cleanup();
     void run();
     void stop();
+    bool is_running() const { return running; }
     
     // Public access to ei_context for portal integration
     struct ei* ei_context;
@@ -24,12 +25,13 @@ public:
     WaylandVirtualKeyboard* keyboard;
     WaylandVirtualPointer* pointer;
     
+    // Public event handling for portal integration
+    void handle_event(struct ei_event* event);
+    void handle_keyboard_event(struct ei_event* event);
+    void handle_pointer_event(struct ei_event* event);
+    
 private:
     struct ei_seat* seat;
     
     bool running;
-    
-    void handle_event(struct ei_event* event);
-    void handle_keyboard_event(struct ei_event* event);
-    void handle_pointer_event(struct ei_event* event);
 }; 

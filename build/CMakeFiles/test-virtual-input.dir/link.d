@@ -5,8 +5,7 @@ test-virtual-input: \
   CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o \
   CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o \
   CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o \
-  CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o \
-  CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o \
+  libwayland_protocols.a \
   /nix/store/mxyi7nahmxs41d2xnyfx9kvanqh3p706-wayland-1.23.1/lib/libwayland-client.so \
   /nix/store/7c0v0kbrrdc2cqgisi78jdqxn73n3401-gcc-14.2.1.20250322-lib/lib/libstdc++.so \
   /nix/store/cg9s562sa33k78m63njfn1rw47dp9z0i-glibc-2.40-66/lib/libm.so \
@@ -49,9 +48,7 @@ CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o:
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o:
 
-CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o:
-
-CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o:
+libwayland_protocols.a:
 
 /nix/store/mxyi7nahmxs41d2xnyfx9kvanqh3p706-wayland-1.23.1/lib/libwayland-client.so:
 

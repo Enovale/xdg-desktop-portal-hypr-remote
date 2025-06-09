@@ -7,11 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/dom/hyprland-remote-desktop/CMakeLists.txt"
+  "/home/dom/xdg-desktop-portal-hypr-remote/CMakeLists.txt"
   "CMakeFiles/3.31.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.6/CMakeSystem.cmake"
-  "/home/dom/hyprland-remote-desktop/data/org.freedesktop.impl.portal.desktop.hyprland.service.in"
+  "/home/dom/xdg-desktop-portal-hypr-remote/contrib/systemd/xdg-desktop-portal-hypr-remote.service.in"
+  "/home/dom/xdg-desktop-portal-hypr-remote/org.freedesktop.impl.portal.desktop.hypr-remote.service.in"
   "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCInformation.cmake"
   "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"
   "/nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
@@ -54,13 +55,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "org.freedesktop.impl.portal.desktop.hyprland.service"
+  "org.freedesktop.impl.portal.desktop.hypr-remote.service"
+  "contrib/systemd/xdg-desktop-portal-hypr-remote.service"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/hyprland-remote-desktop.dir/DependInfo.cmake"
+  "CMakeFiles/wayland_protocols.dir/DependInfo.cmake"
   "CMakeFiles/generate_protocols.dir/DependInfo.cmake"
+  "CMakeFiles/xdg-desktop-portal-hypr-remote.dir/DependInfo.cmake"
   "CMakeFiles/test-virtual-input.dir/DependInfo.cmake"
   )

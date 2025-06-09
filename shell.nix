@@ -19,7 +19,7 @@ pkgs.mkShell {
 
     # Other dependencies
     libei
-    sdbus-cpp_2
+    sdbus-cpp
 
     # Additional development tools
     gdb
@@ -32,7 +32,7 @@ pkgs.mkShell {
     wayland.dev
     wayland-protocols
     libei
-    sdbus-cpp_2
+    sdbus-cpp
     systemd.dev
   ];
 

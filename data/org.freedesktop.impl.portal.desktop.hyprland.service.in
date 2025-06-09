@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.impl.portal.desktop.hyprland-remote-desktop
-Exec=@CMAKE_INSTALL_FULL_BINDIR@/hyprland-remote-desktop 

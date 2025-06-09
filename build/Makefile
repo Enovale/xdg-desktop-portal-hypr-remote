@@ -57,10 +57,10 @@ RM = /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dom/hyprland-remote-desktop
+CMAKE_SOURCE_DIR = /home/dom/xdg-desktop-portal-hypr-remote
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dom/hyprland-remote-desktop/build
+CMAKE_BINARY_DIR = /home/dom/xdg-desktop-portal-hypr-remote/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles /home/dom/hyprland-remote-desktop/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles /home/dom/xdg-desktop-portal-hypr-remote/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hyprland-remote-desktop
+# Target rules for targets named wayland_protocols
 
 # Build rule for target.
-hyprland-remote-desktop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hyprland-remote-desktop
-.PHONY : hyprland-remote-desktop
+wayland_protocols: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wayland_protocols
+.PHONY : wayland_protocols
 
 # fast build rule for target.
-hyprland-remote-desktop/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/build
-.PHONY : hyprland-remote-desktop/fast
+wayland_protocols/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/build
+.PHONY : wayland_protocols/fast
 
 #=============================================================================
 # Target rules for targets named generate_protocols
@@ -186,6 +186,19 @@ generate_protocols: cmake_check_build_system
 generate_protocols/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_protocols.dir/build.make CMakeFiles/generate_protocols.dir/build
 .PHONY : generate_protocols/fast
+
+#=============================================================================
+# Target rules for targets named xdg-desktop-portal-hypr-remote
+
+# Build rule for target.
+xdg-desktop-portal-hypr-remote: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xdg-desktop-portal-hypr-remote
+.PHONY : xdg-desktop-portal-hypr-remote
+
+# fast build rule for target.
+xdg-desktop-portal-hypr-remote/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build
+.PHONY : xdg-desktop-portal-hypr-remote/fast
 
 #=============================================================================
 # Target rules for targets named test-virtual-input
@@ -205,8 +218,7 @@ generated/virtual-keyboard-unstable-v1-protocol.o: generated/virtual-keyboard-un
 
 # target to build an object file
 generated/virtual-keyboard-unstable-v1-protocol.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o
 .PHONY : generated/virtual-keyboard-unstable-v1-protocol.c.o
 
 generated/virtual-keyboard-unstable-v1-protocol.i: generated/virtual-keyboard-unstable-v1-protocol.c.i
@@ -214,8 +226,7 @@ generated/virtual-keyboard-unstable-v1-protocol.i: generated/virtual-keyboard-un
 
 # target to preprocess a source file
 generated/virtual-keyboard-unstable-v1-protocol.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/generated/virtual-keyboard-unstable-v1-protocol.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/generated/virtual-keyboard-unstable-v1-protocol.c.i
 .PHONY : generated/virtual-keyboard-unstable-v1-protocol.c.i
 
 generated/virtual-keyboard-unstable-v1-protocol.s: generated/virtual-keyboard-unstable-v1-protocol.c.s
@@ -223,8 +234,7 @@ generated/virtual-keyboard-unstable-v1-protocol.s: generated/virtual-keyboard-un
 
 # target to generate assembly for a file
 generated/virtual-keyboard-unstable-v1-protocol.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/generated/virtual-keyboard-unstable-v1-protocol.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/generated/virtual-keyboard-unstable-v1-protocol.c.s
 .PHONY : generated/virtual-keyboard-unstable-v1-protocol.c.s
 
 generated/wlr-virtual-pointer-unstable-v1-protocol.o: generated/wlr-virtual-pointer-unstable-v1-protocol.c.o
@@ -232,8 +242,7 @@ generated/wlr-virtual-pointer-unstable-v1-protocol.o: generated/wlr-virtual-poin
 
 # target to build an object file
 generated/wlr-virtual-pointer-unstable-v1-protocol.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o
 .PHONY : generated/wlr-virtual-pointer-unstable-v1-protocol.c.o
 
 generated/wlr-virtual-pointer-unstable-v1-protocol.i: generated/wlr-virtual-pointer-unstable-v1-protocol.c.i
@@ -241,8 +250,7 @@ generated/wlr-virtual-pointer-unstable-v1-protocol.i: generated/wlr-virtual-poin
 
 # target to preprocess a source file
 generated/wlr-virtual-pointer-unstable-v1-protocol.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.i
 .PHONY : generated/wlr-virtual-pointer-unstable-v1-protocol.c.i
 
 generated/wlr-virtual-pointer-unstable-v1-protocol.s: generated/wlr-virtual-pointer-unstable-v1-protocol.c.s
@@ -250,8 +258,7 @@ generated/wlr-virtual-pointer-unstable-v1-protocol.s: generated/wlr-virtual-poin
 
 # target to generate assembly for a file
 generated/wlr-virtual-pointer-unstable-v1-protocol.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.s
 .PHONY : generated/wlr-virtual-pointer-unstable-v1-protocol.c.s
 
 src/libei_handler.o: src/libei_handler.cpp.o
@@ -259,7 +266,7 @@ src/libei_handler.o: src/libei_handler.cpp.o
 
 # target to build an object file
 src/libei_handler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/libei_handler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/libei_handler.cpp.o
 .PHONY : src/libei_handler.cpp.o
 
 src/libei_handler.i: src/libei_handler.cpp.i
@@ -267,7 +274,7 @@ src/libei_handler.i: src/libei_handler.cpp.i
 
 # target to preprocess a source file
 src/libei_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/libei_handler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/libei_handler.cpp.i
 .PHONY : src/libei_handler.cpp.i
 
 src/libei_handler.s: src/libei_handler.cpp.s
@@ -275,7 +282,7 @@ src/libei_handler.s: src/libei_handler.cpp.s
 
 # target to generate assembly for a file
 src/libei_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/libei_handler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/libei_handler.cpp.s
 .PHONY : src/libei_handler.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -283,7 +290,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -291,7 +298,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -299,7 +306,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/portal.o: src/portal.cpp.o
@@ -307,7 +314,7 @@ src/portal.o: src/portal.cpp.o
 
 # target to build an object file
 src/portal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/portal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/portal.cpp.o
 .PHONY : src/portal.cpp.o
 
 src/portal.i: src/portal.cpp.i
@@ -315,7 +322,7 @@ src/portal.i: src/portal.cpp.i
 
 # target to preprocess a source file
 src/portal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/portal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/portal.cpp.i
 .PHONY : src/portal.cpp.i
 
 src/portal.s: src/portal.cpp.s
@@ -323,7 +330,7 @@ src/portal.s: src/portal.cpp.s
 
 # target to generate assembly for a file
 src/portal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/portal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/portal.cpp.s
 .PHONY : src/portal.cpp.s
 
 src/wayland_virtual_keyboard.o: src/wayland_virtual_keyboard.cpp.o
@@ -331,7 +338,7 @@ src/wayland_virtual_keyboard.o: src/wayland_virtual_keyboard.cpp.o
 
 # target to build an object file
 src/wayland_virtual_keyboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/wayland_virtual_keyboard.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_keyboard.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o
 .PHONY : src/wayland_virtual_keyboard.cpp.o
 
@@ -340,7 +347,7 @@ src/wayland_virtual_keyboard.i: src/wayland_virtual_keyboard.cpp.i
 
 # target to preprocess a source file
 src/wayland_virtual_keyboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/wayland_virtual_keyboard.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_keyboard.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.i
 .PHONY : src/wayland_virtual_keyboard.cpp.i
 
@@ -349,7 +356,7 @@ src/wayland_virtual_keyboard.s: src/wayland_virtual_keyboard.cpp.s
 
 # target to generate assembly for a file
 src/wayland_virtual_keyboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/wayland_virtual_keyboard.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_keyboard.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.s
 .PHONY : src/wayland_virtual_keyboard.cpp.s
 
@@ -358,7 +365,7 @@ src/wayland_virtual_pointer.o: src/wayland_virtual_pointer.cpp.o
 
 # target to build an object file
 src/wayland_virtual_pointer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/wayland_virtual_pointer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_pointer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o
 .PHONY : src/wayland_virtual_pointer.cpp.o
 
@@ -367,7 +374,7 @@ src/wayland_virtual_pointer.i: src/wayland_virtual_pointer.cpp.i
 
 # target to preprocess a source file
 src/wayland_virtual_pointer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/wayland_virtual_pointer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_pointer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.i
 .PHONY : src/wayland_virtual_pointer.cpp.i
 
@@ -376,7 +383,7 @@ src/wayland_virtual_pointer.s: src/wayland_virtual_pointer.cpp.s
 
 # target to generate assembly for a file
 src/wayland_virtual_pointer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/src/wayland_virtual_pointer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/src/wayland_virtual_pointer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.s
 .PHONY : src/wayland_virtual_pointer.cpp.s
 
@@ -417,8 +424,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... generate_protocols"
-	@echo "... hyprland-remote-desktop"
 	@echo "... test-virtual-input"
+	@echo "... wayland_protocols"
+	@echo "... xdg-desktop-portal-hypr-remote"
 	@echo "... generated/virtual-keyboard-unstable-v1-protocol.o"
 	@echo "... generated/virtual-keyboard-unstable-v1-protocol.i"
 	@echo "... generated/virtual-keyboard-unstable-v1-protocol.s"

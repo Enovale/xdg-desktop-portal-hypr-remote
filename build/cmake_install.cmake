@@ -1,4 +1,4 @@
-# Install script for directory: /home/dom/hyprland-remote-desktop
+# Install script for directory: /home/dom/xdg-desktop-portal-hypr-remote
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -43,37 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xdg-desktop-portal-hypr-remote" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xdg-desktop-portal-hypr-remote")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xdg-desktop-portal-hypr-remote"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/dom/hyprland-remote-desktop/build/hyprland-remote-desktop")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop"
-         OLD_RPATH "/nix/store/mxyi7nahmxs41d2xnyfx9kvanqh3p706-wayland-1.23.1/lib:/nix/store/cw22162jyn1pw1avgb32qgp1p3pbhrsb-libei-1.4.1/lib:/nix/store/if9z6wmzmb07j63c02mvfkhn1mw1w5p4-systemd-257.5/lib:/nix/store/p2329axpy8rf5m3hn2bndjciyq9b73bx-sdbus-cpp-1.5.0/lib:"
-         NEW_RPATH "")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/dom/xdg-desktop-portal-hypr-remote/build/xdg-desktop-portal-hypr-remote")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xdg-desktop-portal-hypr-remote" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xdg-desktop-portal-hypr-remote")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/run/current-system/sw/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/hyprland-remote-desktop")
+      execute_process(COMMAND "/run/current-system/sw/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xdg-desktop-portal-hypr-remote")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xdg-desktop-portal/portals" TYPE FILE FILES "/home/dom/hyprland-remote-desktop/data/hyprland-remote-desktop.portal")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dbus-1/services" TYPE FILE FILES "/home/dom/hyprland-remote-desktop/build/org.freedesktop.impl.portal.desktop.hyprland.service")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xdg-desktop-portal/portals" TYPE FILE FILES "/home/dom/xdg-desktop-portal-hypr-remote/data/hypr-remote.portal")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/dom/hyprland-remote-desktop/build/install_local_manifest.txt"
+  file(WRITE "/home/dom/xdg-desktop-portal-hypr-remote/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -89,6 +81,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/dom/hyprland-remote-desktop/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/dom/xdg-desktop-portal-hypr-remote/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

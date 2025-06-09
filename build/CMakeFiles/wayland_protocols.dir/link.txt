@@ -1,0 +1,2 @@
+/run/current-system/sw/bin/ar qc libwayland_protocols.a "CMakeFiles/wayland_protocols.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o" "CMakeFiles/wayland_protocols.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o"
+/run/current-system/sw/bin/ranlib libwayland_protocols.a

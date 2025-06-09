@@ -12,19 +12,18 @@ echo "Setting up development D-Bus environment..."
 mkdir -p ~/.local/share/dbus-1/services
 mkdir -p ~/.local/share/xdg-desktop-portal/portals
 
-# Create development service file (using .dev name to avoid conflicts)
-cat > ~/.local/share/dbus-1/services/org.freedesktop.impl.portal.desktop.hyprland.dev.service << EOF
+#Create development service file (using .dev name to avoid conflicts)
+cat > ~/.local/share/dbus-1/services/org.freedesktop.impl.portal.desktop.hypr-remote.service << EOF
 [D-BUS Service]
-Name=org.freedesktop.impl.portal.desktop.hypr-remote-desktop
-Exec=$(pwd)/build/hyprland-remote-desktop
+Name=org.freedesktop.impl.portal.desktop.hypr-remote
+Exec=$(pwd)/build/xdg-desktop-portal-hypr-remote
 EOF
 
 # Create development portal file
-cat > ~/.local/share/xdg-desktop-portal/portals/hypr-remote-desktop.portal << EOF
+cat > ~/.local/share/xdg-desktop-portal/portals/hypr-remote.portal << EOF
 [portal]
-DBusName=org.freedesktop.impl.portal.desktop.hypr-remote-desktop
+DBusName=org.freedesktop.impl.portal.desktop.hypr-remote
 Interfaces=org.freedesktop.impl.portal.RemoteDesktop
-UseIn=hyprland
 EOF
 
 echo "✓ Development files created:"
@@ -38,4 +37,4 @@ echo "Should see 'Portal registered on SESSION bus' if working!"
 echo "Press Ctrl+C to stop"
 echo
 
-./build/hyprland-remote-desktop 
+./build/xdg-desktop-portal-hypr-remote

@@ -37,22 +37,7 @@ bool LibEIHandler::init(WaylandVirtualKeyboard* kb, WaylandVirtualPointer* ptr) 
     // Configure the name for this context
     ei_configure_name(ei_context, "Hyprland Remote Desktop Portal");
     
-    // Try to connect to EIS backend via socket
-    // Usually the socket is provided via environment variable or portal
-    const char* ei_socket = getenv("EI_SOCKET");
-    if (ei_socket) {
-        std::cout << "Connecting to EI socket: " << ei_socket << std::endl;
-        if (ei_setup_backend_socket(ei_context, ei_socket) != 0) {
-            std::cerr << "Failed to setup EI socket backend" << std::endl;
-            cleanup();
-            return false;
-        }
-    } else {
-        // For now, log that we need a socket but continue
-        std::cout << "No EI_SOCKET environment variable set" << std::endl;
-        std::cout << "LibEI will be ready but waiting for connection" << std::endl;
-    }
-    
+    std::cout << "EI receiver context created for portal file descriptor sharing" << std::endl;
     std::cout << "✓ LibEI Handler initialized successfully" << std::endl;
     return true;
 }
@@ -273,10 +258,10 @@ void LibEIHandler::handle_pointer_event(struct ei_event* event) {
             
             // Send scroll events for both axes if non-zero
             if (dx != 0.0) {
-                pointer->send_axis(time, WL_POINTER_AXIS_HORIZONTAL_SCROLL, dx);
+                pointer->send_axis(time, WL_POINTER_AXIS_HORIZONTAL_SCROLL, dx, dy);
             }
             if (dy != 0.0) {
-                pointer->send_axis(time, WL_POINTER_AXIS_VERTICAL_SCROLL, dy);
+                pointer->send_axis(time, WL_POINTER_AXIS_VERTICAL_SCROLL, dy, dx);
             }
             pointer->send_frame();
             break;
@@ -288,15 +273,7 @@ void LibEIHandler::handle_pointer_event(struct ei_event* event) {
             
             std::cout << "EI: Scroll discrete dx=" << dx << " dy=" << dy << std::endl;
             
-            // Convert discrete scroll to delta (120 units = 1 scroll step)
-            if (dx != 0) {
-                double delta_x = (dx / 120.0) * 10.0; // Scale for smooth scrolling
-                pointer->send_axis(time, WL_POINTER_AXIS_HORIZONTAL_SCROLL, delta_x);
-            }
-            if (dy != 0) {
-                double delta_y = (dy / 120.0) * 10.0;
-                pointer->send_axis(time, WL_POINTER_AXIS_VERTICAL_SCROLL, delta_y);
-            }
+            pointer->send_axis_discrete(time, dx, dy);
             pointer->send_frame();
             break;
         }

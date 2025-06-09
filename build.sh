@@ -15,7 +15,7 @@ cmake ..
 make -j$(nproc)
 
 echo "✓ Build complete!"
-echo "Executable: build/hyprland-remote-desktop"
+echo "Executable: build/xdg-desktop-portal-hypr-remote"
 echo ""
 echo "To run:"
-echo "  cd build && ./hyprland-remote-desktop" 
+echo "  cd build && ./xdg-desktop-portal-hypr-remote" 

@@ -54,21 +54,23 @@ RM = /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dom/hyprland-remote-desktop
+CMAKE_SOURCE_DIR = /home/dom/xdg-desktop-portal-hypr-remote
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dom/hyprland-remote-desktop/build
+CMAKE_BINARY_DIR = /home/dom/xdg-desktop-portal-hypr-remote/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hyprland-remote-desktop.dir/all
+all: CMakeFiles/wayland_protocols.dir/all
+all: CMakeFiles/xdg-desktop-portal-hypr-remote.dir/all
 all: CMakeFiles/test-virtual-input.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/hyprland-remote-desktop.dir/codegen
+codegen: CMakeFiles/wayland_protocols.dir/codegen
+codegen: CMakeFiles/xdg-desktop-portal-hypr-remote.dir/codegen
 codegen: CMakeFiles/test-virtual-input.dir/codegen
 .PHONY : codegen
 
@@ -77,42 +79,43 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hyprland-remote-desktop.dir/clean
+clean: CMakeFiles/wayland_protocols.dir/clean
 clean: CMakeFiles/generate_protocols.dir/clean
+clean: CMakeFiles/xdg-desktop-portal-hypr-remote.dir/clean
 clean: CMakeFiles/test-virtual-input.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hyprland-remote-desktop.dir
+# Target rules for target CMakeFiles/wayland_protocols.dir
 
 # All Build rule for target.
-CMakeFiles/hyprland-remote-desktop.dir/all: CMakeFiles/generate_protocols.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Built target hyprland-remote-desktop"
-.PHONY : CMakeFiles/hyprland-remote-desktop.dir/all
+CMakeFiles/wayland_protocols.dir/all: CMakeFiles/generate_protocols.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target wayland_protocols"
+.PHONY : CMakeFiles/wayland_protocols.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hyprland-remote-desktop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hyprland-remote-desktop.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 0
-.PHONY : CMakeFiles/hyprland-remote-desktop.dir/rule
+CMakeFiles/wayland_protocols.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wayland_protocols.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 0
+.PHONY : CMakeFiles/wayland_protocols.dir/rule
 
 # Convenience name for target.
-hyprland-remote-desktop: CMakeFiles/hyprland-remote-desktop.dir/rule
-.PHONY : hyprland-remote-desktop
+wayland_protocols: CMakeFiles/wayland_protocols.dir/rule
+.PHONY : wayland_protocols
 
 # codegen rule for target.
-CMakeFiles/hyprland-remote-desktop.dir/codegen: CMakeFiles/generate_protocols.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Finished codegen for target hyprland-remote-desktop"
-.PHONY : CMakeFiles/hyprland-remote-desktop.dir/codegen
+CMakeFiles/wayland_protocols.dir/codegen: CMakeFiles/generate_protocols.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=9,10,11,12,13 "Finished codegen for target wayland_protocols"
+.PHONY : CMakeFiles/wayland_protocols.dir/codegen
 
 # clean rule for target.
-CMakeFiles/hyprland-remote-desktop.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hyprland-remote-desktop.dir/build.make CMakeFiles/hyprland-remote-desktop.dir/clean
-.PHONY : CMakeFiles/hyprland-remote-desktop.dir/clean
+CMakeFiles/wayland_protocols.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wayland_protocols.dir/build.make CMakeFiles/wayland_protocols.dir/clean
+.PHONY : CMakeFiles/wayland_protocols.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/generate_protocols.dir
@@ -121,14 +124,14 @@ CMakeFiles/hyprland-remote-desktop.dir/clean:
 CMakeFiles/generate_protocols.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_protocols.dir/build.make CMakeFiles/generate_protocols.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_protocols.dir/build.make CMakeFiles/generate_protocols.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=1,2,3,4 "Built target generate_protocols"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=1,2,3,4 "Built target generate_protocols"
 .PHONY : CMakeFiles/generate_protocols.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/generate_protocols.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/generate_protocols.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 0
 .PHONY : CMakeFiles/generate_protocols.dir/rule
 
 # Convenience name for target.
@@ -138,7 +141,7 @@ generate_protocols: CMakeFiles/generate_protocols.dir/rule
 # codegen rule for target.
 CMakeFiles/generate_protocols.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_protocols.dir/build.make CMakeFiles/generate_protocols.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target generate_protocols"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target generate_protocols"
 .PHONY : CMakeFiles/generate_protocols.dir/codegen
 
 # clean rule for target.
@@ -147,20 +150,54 @@ CMakeFiles/generate_protocols.dir/clean:
 .PHONY : CMakeFiles/generate_protocols.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/xdg-desktop-portal-hypr-remote.dir
+
+# All Build rule for target.
+CMakeFiles/xdg-desktop-portal-hypr-remote.dir/all: CMakeFiles/wayland_protocols.dir/all
+CMakeFiles/xdg-desktop-portal-hypr-remote.dir/all: CMakeFiles/generate_protocols.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=14,15,16,17,18,19 "Built target xdg-desktop-portal-hypr-remote"
+.PHONY : CMakeFiles/xdg-desktop-portal-hypr-remote.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/xdg-desktop-portal-hypr-remote.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/xdg-desktop-portal-hypr-remote.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 0
+.PHONY : CMakeFiles/xdg-desktop-portal-hypr-remote.dir/rule
+
+# Convenience name for target.
+xdg-desktop-portal-hypr-remote: CMakeFiles/xdg-desktop-portal-hypr-remote.dir/rule
+.PHONY : xdg-desktop-portal-hypr-remote
+
+# codegen rule for target.
+CMakeFiles/xdg-desktop-portal-hypr-remote.dir/codegen: CMakeFiles/generate_protocols.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=14,15,16,17,18,19 "Finished codegen for target xdg-desktop-portal-hypr-remote"
+.PHONY : CMakeFiles/xdg-desktop-portal-hypr-remote.dir/codegen
+
+# clean rule for target.
+CMakeFiles/xdg-desktop-portal-hypr-remote.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xdg-desktop-portal-hypr-remote.dir/build.make CMakeFiles/xdg-desktop-portal-hypr-remote.dir/clean
+.PHONY : CMakeFiles/xdg-desktop-portal-hypr-remote.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test-virtual-input.dir
 
 # All Build rule for target.
-CMakeFiles/test-virtual-input.dir/all:
+CMakeFiles/test-virtual-input.dir/all: CMakeFiles/wayland_protocols.dir/all
+CMakeFiles/test-virtual-input.dir/all: CMakeFiles/generate_protocols.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22 "Built target test-virtual-input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=5,6,7,8 "Built target test-virtual-input"
 .PHONY : CMakeFiles/test-virtual-input.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-virtual-input.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test-virtual-input.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/hyprland-remote-desktop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles 0
 .PHONY : CMakeFiles/test-virtual-input.dir/rule
 
 # Convenience name for target.
@@ -168,9 +205,9 @@ test-virtual-input: CMakeFiles/test-virtual-input.dir/rule
 .PHONY : test-virtual-input
 
 # codegen rule for target.
-CMakeFiles/test-virtual-input.dir/codegen:
+CMakeFiles/test-virtual-input.dir/codegen: CMakeFiles/generate_protocols.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-virtual-input.dir/build.make CMakeFiles/test-virtual-input.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22 "Finished codegen for target test-virtual-input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=5,6,7,8 "Finished codegen for target test-virtual-input"
 .PHONY : CMakeFiles/test-virtual-input.dir/codegen
 
 # clean rule for target.

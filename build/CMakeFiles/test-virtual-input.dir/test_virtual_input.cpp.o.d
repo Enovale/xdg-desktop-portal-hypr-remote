@@ -1,7 +1,7 @@
 CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
- /home/dom/hyprland-remote-desktop/test_virtual_input.cpp \
+ /home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/stdc-predef.h \
- /home/dom/hyprland-remote-desktop/src/wayland_virtual_pointer.h \
+ /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.h \
  /nix/store/17mijr1mvgcz2mh22rs7h8qmipwf3m7w-wayland-1.23.1-dev/include/wayland-client.h \
  /nix/store/17mijr1mvgcz2mh22rs7h8qmipwf3m7w-wayland-1.23.1-dev/include/wayland-client-core.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stdint.h \
@@ -68,6 +68,8 @@ CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/__sigset_t.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/struct_timeval.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/struct_timespec.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/select2.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/select-decl.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/pthreadtypes.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/thread-shared-types.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/pthreadtypes-arch.h \
@@ -75,7 +77,9 @@ CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/struct_mutex.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/struct_rwlock.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/alloca.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdlib-bsearch.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdlib-float.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdlib.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/specfun.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/stl_algobase.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/functexcept.h \
@@ -119,9 +123,9 @@ CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
  /nix/store/17mijr1mvgcz2mh22rs7h8qmipwf3m7w-wayland-1.23.1-dev/include/wayland-version.h \
  /nix/store/17mijr1mvgcz2mh22rs7h8qmipwf3m7w-wayland-1.23.1-dev/include/wayland-client-protocol.h \
  /nix/store/17mijr1mvgcz2mh22rs7h8qmipwf3m7w-wayland-1.23.1-dev/include/wayland-client.h \
- /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-client-protocol.h \
- /home/dom/hyprland-remote-desktop/src/wayland_virtual_keyboard.h \
- /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-client-protocol.h \
+ /home/dom/xdg-desktop-portal-hypr-remote/build/generated/wlr-virtual-pointer-unstable-v1-client-protocol.h \
+ /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.h \
+ /home/dom/xdg-desktop-portal-hypr-remote/build/generated/virtual-keyboard-unstable-v1-client-protocol.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/iostream \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/ostream \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/ios \
@@ -136,6 +140,8 @@ CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/__mbstate_t.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/__FILE.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/FILE.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/wchar2-decl.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/wchar2.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/exception \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/exception_ptr.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/cxxabi_init_exception.h \
@@ -200,6 +206,9 @@ CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/struct_FILE.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/types/cookie_io_functions_t.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdio_lim.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdio2-decl.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdio.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/stdio2.h \
  /nix/store/9ds850ifd4jwcccpp3v14818kk74ldf2-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/cerrno \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/errno.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/errno.h \
@@ -303,6 +312,8 @@ CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/confname.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/getopt_posix.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/getopt_core.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/unistd.h \
+ /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/unistd-decl.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/bits/unistd_ext.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/linux/close_range.h \
  /nix/store/r25srliigrrv5q3n7y8ms6z10spvjcd9-glibc-2.40-66-dev/include/syscall.h \

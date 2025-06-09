@@ -53,10 +53,10 @@ RM = /nix/store/wphngc22a7aphbp5pi5jqmqlsqmisgn5-cmake-3.31.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dom/hyprland-remote-desktop
+CMAKE_SOURCE_DIR = /home/dom/xdg-desktop-portal-hypr-remote
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dom/hyprland-remote-desktop/build
+CMAKE_BINARY_DIR = /home/dom/xdg-desktop-portal-hypr-remote/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test-virtual-input.dir/depend.make
@@ -69,94 +69,56 @@ include CMakeFiles/test-virtual-input.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test-virtual-input.dir/flags.make
 
-generated/virtual-keyboard-unstable-v1-protocol.c: /home/dom/hyprland-remote-desktop/protocols/virtual-keyboard-unstable-v1.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating virtual keyboard source"
-	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner private-code /home/dom/hyprland-remote-desktop/protocols/virtual-keyboard-unstable-v1.xml /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-protocol.c
-
-generated/wlr-virtual-pointer-unstable-v1-protocol.c: /home/dom/hyprland-remote-desktop/protocols/wlr-virtual-pointer-unstable-v1.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating virtual pointer source"
-	/nix/store/czj4c9kniwgnniv5w7rjqr3mkvkcymfz-wayland-scanner-1.23.1-bin/bin/wayland-scanner private-code /home/dom/hyprland-remote-desktop/protocols/wlr-virtual-pointer-unstable-v1.xml /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c
-
 CMakeFiles/test-virtual-input.dir/codegen:
 .PHONY : CMakeFiles/test-virtual-input.dir/codegen
 
 CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: CMakeFiles/test-virtual-input.dir/flags.make
-CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: /home/dom/hyprland-remote-desktop/test_virtual_input.cpp
+CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: /home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp
 CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o: CMakeFiles/test-virtual-input.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o -MF CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o.d -o CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o -c /home/dom/hyprland-remote-desktop/test_virtual_input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o"
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o -MF CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o.d -o CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp
 
 CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.i"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/hyprland-remote-desktop/test_virtual_input.cpp > CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.i
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp > CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.i
 
 CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.s"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/hyprland-remote-desktop/test_virtual_input.cpp -o CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.s
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/xdg-desktop-portal-hypr-remote/test_virtual_input.cpp -o CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.s
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o: CMakeFiles/test-virtual-input.dir/flags.make
-CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o: /home/dom/hyprland-remote-desktop/src/wayland_virtual_keyboard.cpp
+CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o: /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o: CMakeFiles/test-virtual-input.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o -MF CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o.d -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o -c /home/dom/hyprland-remote-desktop/src/wayland_virtual_keyboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o"
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o -MF CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o.d -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.i"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/hyprland-remote-desktop/src/wayland_virtual_keyboard.cpp > CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.i
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp > CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.i
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.s"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/hyprland-remote-desktop/src/wayland_virtual_keyboard.cpp -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.s
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_keyboard.cpp -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.s
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o: CMakeFiles/test-virtual-input.dir/flags.make
-CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o: /home/dom/hyprland-remote-desktop/src/wayland_virtual_pointer.cpp
+CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o: /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o: CMakeFiles/test-virtual-input.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o -MF CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o.d -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o -c /home/dom/hyprland-remote-desktop/src/wayland_virtual_pointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o"
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o -MF CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o.d -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o -c /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.i"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/hyprland-remote-desktop/src/wayland_virtual_pointer.cpp > CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.i
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp > CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.i
 
 CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.s"
-	/run/current-system/sw/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/hyprland-remote-desktop/src/wayland_virtual_pointer.cpp -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.s
-
-CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o: CMakeFiles/test-virtual-input.dir/flags.make
-CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o: generated/virtual-keyboard-unstable-v1-protocol.c
-CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o: CMakeFiles/test-virtual-input.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o"
-	/run/current-system/sw/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o -MF CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o.d -o CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o -c /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-protocol.c
-
-CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.i"
-	/run/current-system/sw/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-protocol.c > CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.i
-
-CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.s"
-	/run/current-system/sw/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dom/hyprland-remote-desktop/build/generated/virtual-keyboard-unstable-v1-protocol.c -o CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.s
-
-CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o: CMakeFiles/test-virtual-input.dir/flags.make
-CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o: generated/wlr-virtual-pointer-unstable-v1-protocol.c
-CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o: CMakeFiles/test-virtual-input.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o"
-	/run/current-system/sw/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o -MF CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o.d -o CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o -c /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c
-
-CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.i"
-	/run/current-system/sw/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c > CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.i
-
-CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.s"
-	/run/current-system/sw/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dom/hyprland-remote-desktop/build/generated/wlr-virtual-pointer-unstable-v1-protocol.c -o CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.s
+	/run/current-system/sw/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/xdg-desktop-portal-hypr-remote/src/wayland_virtual_pointer.cpp -o CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.s
 
 # Object files for target test-virtual-input
 test__virtual__input_OBJECTS = \
 "CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o" \
 "CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o" \
-"CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o" \
-"CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o" \
-"CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o"
+"CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o"
 
 # External object files for target test-virtual-input
 test__virtual__input_EXTERNAL_OBJECTS =
@@ -164,12 +126,11 @@ test__virtual__input_EXTERNAL_OBJECTS =
 test-virtual-input: CMakeFiles/test-virtual-input.dir/test_virtual_input.cpp.o
 test-virtual-input: CMakeFiles/test-virtual-input.dir/src/wayland_virtual_keyboard.cpp.o
 test-virtual-input: CMakeFiles/test-virtual-input.dir/src/wayland_virtual_pointer.cpp.o
-test-virtual-input: CMakeFiles/test-virtual-input.dir/generated/virtual-keyboard-unstable-v1-protocol.c.o
-test-virtual-input: CMakeFiles/test-virtual-input.dir/generated/wlr-virtual-pointer-unstable-v1-protocol.c.o
 test-virtual-input: CMakeFiles/test-virtual-input.dir/build.make
 test-virtual-input: CMakeFiles/test-virtual-input.dir/compiler_depend.ts
+test-virtual-input: libwayland_protocols.a
 test-virtual-input: CMakeFiles/test-virtual-input.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dom/hyprland-remote-desktop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test-virtual-input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test-virtual-input"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-virtual-input.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -180,8 +141,7 @@ CMakeFiles/test-virtual-input.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/test-virtual-input.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/test-virtual-input.dir/clean
 
-CMakeFiles/test-virtual-input.dir/depend: generated/virtual-keyboard-unstable-v1-protocol.c
-CMakeFiles/test-virtual-input.dir/depend: generated/wlr-virtual-pointer-unstable-v1-protocol.c
-	cd /home/dom/hyprland-remote-desktop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dom/hyprland-remote-desktop /home/dom/hyprland-remote-desktop /home/dom/hyprland-remote-desktop/build /home/dom/hyprland-remote-desktop/build /home/dom/hyprland-remote-desktop/build/CMakeFiles/test-virtual-input.dir/DependInfo.cmake "--color=$(COLOR)"
+CMakeFiles/test-virtual-input.dir/depend:
+	cd /home/dom/xdg-desktop-portal-hypr-remote/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dom/xdg-desktop-portal-hypr-remote /home/dom/xdg-desktop-portal-hypr-remote /home/dom/xdg-desktop-portal-hypr-remote/build /home/dom/xdg-desktop-portal-hypr-remote/build /home/dom/xdg-desktop-portal-hypr-remote/build/CMakeFiles/test-virtual-input.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test-virtual-input.dir/depend
 
