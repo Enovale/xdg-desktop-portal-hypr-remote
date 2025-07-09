@@ -10,6 +10,7 @@ pkgs.mkShell {
     # System dependencies
     libffi
     systemd
+    libxkbcommon
     
     # Wayland dependencies
     wayland

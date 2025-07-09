@@ -15,6 +15,7 @@ public:
     
     // Keyboard input methods
     void send_key(uint32_t time, uint32_t key, uint32_t state);
+    void send_keysym(uint32_t time, uint32_t keysym, uint32_t state);
     void send_modifiers(uint32_t mods_depressed, uint32_t mods_latched, 
                        uint32_t mods_locked, uint32_t group);
 

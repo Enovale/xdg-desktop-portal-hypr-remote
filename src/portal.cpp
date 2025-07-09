@@ -75,8 +75,11 @@ bool Portal::init(LibEIHandler* handler) {
         
         object->registerMethod(PORTAL_INTERFACE, "NotifyKeyboardKeycode", "oa{sv}iu", "", 
                               [this](sdbus::MethodCall call) { NotifyKeyboardKeycode(std::move(call)); });
-        
-        object->registerMethod(PORTAL_INTERFACE, "NotifyPointerAxis", "oa{sv}dd", "", 
+
+        object->registerMethod(PORTAL_INTERFACE, "NotifyKeyboardKeysym", "oa{sv}iu", "",
+                              [this](sdbus::MethodCall call) { NotifyKeyboardKeysym(std::move(call)); });
+
+        object->registerMethod(PORTAL_INTERFACE, "NotifyPointerAxis", "oa{sv}dd", "",
                               [this](sdbus::MethodCall call) { NotifyPointerAxis(std::move(call)); });
         
         // Modern EIS (Emulated Input Server) method - this is what deskflow actually uses!
@@ -389,6 +392,34 @@ void Portal::NotifyKeyboardKeycode(sdbus::MethodCall call) {
         std::cout << "❌ No virtual keyboard available" << std::endl;
     }
     
+    auto reply = call.createReply();
+    reply.send();
+}
+
+void Portal::NotifyKeyboardKeysym(sdbus::MethodCall call) {
+    std::cout << "⌨️ NotifyKeyboardKeysym called!" << std::endl;
+
+    // Extract parameters
+    sdbus::ObjectPath session_handle;
+    std::map<std::string, sdbus::Variant> options;
+    int32_t keysym;
+    uint32_t state;
+    call >> session_handle >> options >> keysym >> state;
+
+    std::cout << "Session: " << session_handle << ", Keysym: " << keysym << ", State: " << state << std::endl;
+
+    // Get current time for wayland events
+    uint32_t time = static_cast<uint32_t>(std::chrono::duration_cast<std::chrono::milliseconds>(
+        std::chrono::steady_clock::now().time_since_epoch()).count());
+
+    // Forward to virtual keyboard
+    if (libei_handler && libei_handler->keyboard) {
+        libei_handler->keyboard->send_keysym(time, static_cast<uint32_t>(keysym), state);
+        std::cout << "✅ Keysym event forwarded to virtual keyboard" << std::endl;
+    } else {
+        std::cout << "❌ No virtual keyboard available" << std::endl;
+    }
+
     auto reply = call.createReply();
     reply.send();
 }

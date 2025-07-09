@@ -51,6 +51,7 @@ private:
     void NotifyPointerMotion(sdbus::MethodCall call);
     void NotifyPointerButton(sdbus::MethodCall call);
     void NotifyKeyboardKeycode(sdbus::MethodCall call);
+    void NotifyKeyboardKeysym(sdbus::MethodCall call);
     void NotifyPointerAxis(sdbus::MethodCall call);
     
     // Modern EIS (Emulated Input Server) method
