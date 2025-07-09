@@ -237,7 +237,7 @@ bool WaylandVirtualKeyboard::setup_keymap() {
     munmap(data, keymap_size);
 
     // Send keymap to compositor
-    zwp_virtual_keyboard_v1_keymap(virtual_keyboard, XKB_KEYMAP_FORMAT_TEXT_V1, fd, keymap_size); // XKB_KEYMAP_FORMAT_TEXT_V1 = 1
+    zwp_virtual_keyboard_v1_keymap(virtual_keyboard, XKB_KEYMAP_FORMAT_TEXT_V1, fd, keymap_size);
     Xkb::self()->keyboard_keymap(XKB_KEYMAP_FORMAT_TEXT_V1, fd, keymap_size);
     close(fd);
 
